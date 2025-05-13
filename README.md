@@ -4,7 +4,7 @@ This is the source code for my personal portfolio website. It is a single-page, 
 
 ## Live Preview
 
-[Click here to view my portfolio](https://your-live-site-link.com) 
+[Click here to view my portfolio](https://nethravathi01.github.io/Portfolio/) 
 
 ## Features
 
