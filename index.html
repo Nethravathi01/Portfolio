@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nethravathi R | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 120px 0;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    .nav-link {
+      color: #bbb !important;
+    }
+    .nav-link:hover {
+      color: #fff !important;
+    }
+    .btn-primary {
+      background-color: #6c63ff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #5753d9;
+    }
+    .card, .project-item {
+      background-color: #1a1a1a;
+      border: none;
+    }
+    footer {
+      background: #111;
+      padding: 40px 0;
+    }
+    a {
+      color: #6c63ff;
+    }
+    .about-img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 400px;
+      width: 300px;
+    }
+    .project-toggle {
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .project-toggle:hover {
+      background: #222;
+    }
+    .project-content {
+      display: none;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nethravathi R</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4"><em>Hi, I'm Nethravathi R</em></h1>
+      <p class="lead"><em>Aspiring Data Analyst & AI Enthusiast</em></p>
+      <p><em>Focused on building impactful data-driven solutions</em></p>
+      <a href="#projects" class="btn btn-primary m-2">See My Projects</a>
+      <a href="#about" class="btn btn-outline-light m-2">Learn More</a>
+    </div>
+  </section>  <section id="about">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="portpic.jpg" alt="Nethravathi Photo" class="img-fluid about-img">
+        </div>
+        <div class="col-md-8">
+          <p>
+            <em>I'm completed my Bachelor's degree in Electronics and Communication Engineering at Don Bosco Institute of Technology. I recently interned as a Data Science Intern at Compsoft Technologies, worked on an AI-based smart spoon. I'm passionate about analytics, NLP, and building meaningful tech using data.</em>
+          </p>
+          <p>
+            <em>I enjoy designing intelligent systems that improve people's lives and aim to work at the intersection of AI and social good. I have experience in using tools like Power BI, PostgreSQL, and Python to derive insights from data.</em>
+          </p>
+          <p>
+            <em>I'm actively seeking opportunities that let me contribute to real-world problems through innovative analytics solutions and intuitive interfaces.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>  <section id="projects">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-3 project-toggle border rounded" onclick="toggleProject('project1')">
+            <h5>Social Media Trend Analyzer</h5>
+            <div id="project1" class="project-content">
+              <img src="trendPort.jpg" class="img-fluid mb-2" alt="Trend Analyzer Image" />
+              <p>Tracked trending YouTube videos using Scrapy & YouTube API. Built real-time dashboards using Streamlit.</p>
+              <a href="https://github.com/Nethravathi01/Social-Media-Trend-Analyzer"> View on GitHub</a>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-6">
+          <div class="p-3 project-toggle border rounded" onclick="toggleProject('project2')">
+            <h5>HR Analytics Dashboard</h5>
+            <div id="project2" class="project-content">
+              <img src="dashboard_screenshot (1).jpg" class="img-fluid mb-2" alt="HR Dashboard Image" />
+              <p>Created HR KPI dashboards with PostgreSQL & Power BI for attrition, tenure, and headcount tracking.</p>
+              <a href="https://github.com/Nethravathi01/HR-Analytics-Dashbord">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 project-toggle border rounded" onclick="toggleProject('project3')">
+            <h5>AI-Powered Resume Matcher</h5>
+            <div id="project3" class="project-content">
+              <img src="AI-matchPort.png" class="img-fluid mb-2" alt="AI-resume matcher Image/">
+              <p>
+                This project is a smart Resume Matcher tool designed to help job seekers evaluate how well their resume aligns with a specific job description.
+                 Built using Python and Streamlit, the application leverages AI and NLP techniques like TF-IDF and Sentence-BERT to score and suggest improvements.</p>
+              <a href="https://github.com/Nethravathi01/AI-Powered-Resume-Matcher">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 project-toggle border rounded" onclick="toggleProject('project4')">
+            <h5>Revenue Insights for Hospitality</h5>
+            <div id="project4" class="project-content">
+            <img src="Screenshot 2025-05-13 205725.png" class="img-fluid mb-2" alt="Revenue insights Image/">
+              <p>
+                Created a dynamic Power BI dashboard to analyze three months of hotel revenue data.
+                Identified revenue loss trends and proposed insights to improve strategy, contributing to a 20% market share recovery.
+                Used Excel for pre-processing and cleaning large data sets.</p>
+              <a href= "https://github.com/Nethravathi01/Hotel-Data-insights">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3 project-toggle border rounded" onclick="toggleProject('project5')">
+            <h5>Full Stack E-commerce Site</h5>
+            <div id="project5" class="project-content">
+              <img src="Home page.png" class="img-fluid mb-2" alt="E-commerce site Image/">
+              <p>
+                Built a full-stack e-commerce site with product display and cart features.
+                Integrated a backend with MongoDB to serve product data dynamically.
+                Used Express.js routing and API structure to organize backend services.
+                Implemented a product seed script and enabled dark mode on frontend</p>
+                <a href="https://github.com/Nethravathi01/Full-Stack-E-Commerce-Site">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+   <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nethrargowda127@gmail.com">nethrargowda127@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/nethravathi-ravi-6aa904283" target="_blank">Nethravathi Ravi</a></p>
+      <p>GitHub: <a href="https://github.com/Nethravathi01" target="_blank">Nethravathi01</a></p>
+    </div>
+  </section>  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Nethravathi R. All rights reserved.</p>
+    </div>
+  </footer>  <script>
+    function toggleProject(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
